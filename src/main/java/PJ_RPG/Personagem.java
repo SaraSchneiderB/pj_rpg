@@ -1,59 +1,82 @@
-
 package PJ_RPG;
 
+import java.util.Random;
+
+/**
+ *
+ * @author Sara
+ */
+
 public abstract class Personagem {
+
     private String nome;
-    private int nivel;
+    protected int nivel;
     protected String caracteristicaNivel;
     private int classeArmadura;
-    private int pontosVida;
+    protected int pontosVida;
     protected String spellSlot;
 
+    public int gerarPo() {
+        Random gerador = new Random();
+        int numRandom = gerador.nextInt(8) + 11;
+        System.out.print("\nVocê tem " + numRandom + "PO (Peças de Ouro)");
+        return numRandom;
+    }
+
+    
     //getters
     public String getNome() {
         return nome;
-    }
-    public int getnivel(){
+    } 
+
+    /*
+    public int getnivel() {
         return nivel;
     }
-    public String getCaracteristicaNivel(){
+     
+    public String getCaracteristicaNivel() {
         return caracteristicaNivel;
     }
-    public int getClasseArmadura(){
+
+    public int getClasseArmadura() {
         return classeArmadura;
     }
-    public int getPontosVida(){
+
+    public int getPontosVida() {
         return pontosVida;
     }
-    public String getSpellSlot(){
+
+    public String getSpellSlot() {
         return spellSlot;
     }
-    
+     */
     //setters
     public void setNome(String n) {
         this.nome = n;
     }
 
-    public void setNivel(int nv){
+    public void setNivel(int nv) {
         this.nivel = nv;
     }
-    public void setCaracteristicaNivel(String cni){
+
+    public void setCaracteristicaNivel(String cni) {
         this.caracteristicaNivel = cni;
-}
-        public void setClasseArmadura(int ca){
-        this.classeArmadura = ca;
-}
-    public void setPontosVida(int pv){
-        this.pontosVida = pv;
-    }
-    public void setSpellSlot(String sp){
-        this.spellSlot = sp;
-    }
-   
-    public String detalhesPersonagem() {
-        return "\nInfo geral do seu personagem: " + "\nNome: " + nome + "\nNível do personagem: " + nivel 
-                + "\nCA: " + classeArmadura + "\nPV: " + pontosVida;
     }
 
-    
+    public void setClasseArmadura(int ca) {
+        this.classeArmadura = ca;
+    }
+
+    public void setPontosVida(int pvs) {
+        this.pontosVida = pvs;
+    }
+
+    public void setSpellSlot(String sp) {
+        this.spellSlot = sp;
+    }
+
+    public String detalhesPersonagem() {
+        return "\nOk, Agora temos o básico da sua Ficha de Personagem. Vamos para as informações: " + "\n\nNome do Aventureiro: " + nome + "\nNível atual: " + nivel
+                + "\nSua Classe de Armadura (CA): " + classeArmadura;
+    }
 }

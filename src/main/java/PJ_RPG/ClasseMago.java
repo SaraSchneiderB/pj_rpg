@@ -1,5 +1,12 @@
 package PJ_RPG;
 
+import java.util.Random;
+
+/**
+ *
+ * @author Sara
+ */
+
 public class ClasseMago extends Personagem {
 
     public void castarMagia() {
@@ -7,19 +14,53 @@ public class ClasseMago extends Personagem {
     }
 
     public void inventario() {
+
         System.out.print("\n\nInventário:"
                 + "\nGrimório"
                 + "\nBolsa de componentes"
                 + "\nPacote de estudioso\n");
     }
 
+    /**
+     *
+     * @param nivel2 puxa o valor atribuído no nível do personagem (int) - e o converte (string) quando necessário - para que possa ser utilizado nos comandos de pontos de vida, spellslots e
+     * características de nível
+     */
     @Override
     public void setNivel(int nivel2) {
         super.setNivel(nivel2);
         setSpellSlot(Integer.toString(nivel2));
         setCaracteristicaNivel(Integer.toString(nivel2));
+        setPontosVida(nivel2);
     }
 
+    /**
+     *
+     * @param nivels recebe a informação do nível do personagem e a partir dele estipula os pontos de vida
+     */
+    @Override
+    public void setPontosVida(int nivels) {
+
+        switch (nivels) {
+            case 1 ->
+                pontosVida = 4;
+            case 2 ->
+                pontosVida = 8 + 2;
+            case 3 ->
+                pontosVida = 12 + 3;
+            case 4 ->
+                pontosVida = 16 + 4;
+            case 5 ->
+                pontosVida = 20 + 5;
+            default ->
+                pontosVida = 0;
+        }
+    }
+
+    /**
+     *
+     * @param spellm recebe a informação do nível do personagem e a partir dele estipula os espaços de magia
+     */
     @Override
     public void setSpellSlot(String spellm) {
         int spellmg = Integer.parseInt(spellm);
@@ -40,13 +81,17 @@ public class ClasseMago extends Personagem {
         }
     }
 
+    /**
+     *
+     * @param carNivel puxa o nível do personagem para identificar quais são suas características de classe por nível
+     */
     @Override
     public void setCaracteristicaNivel(String carNivel) {
         int nivel = Integer.parseInt(carNivel);
 
         switch (nivel) {
             case 1 ->
-                caracteristicaNivel = "\n|Conjuração, Recuperação Arcana|";
+                caracteristicaNivel = "\n|Conjuração, Recuperação Arcana(n.1)|";
             case 2 ->
                 caracteristicaNivel = "\n|Conjuração, Recuperação Arcana(n.1)|,\n|Tradição Arcana(n.2)|";
             case 3 ->
@@ -63,7 +108,6 @@ public class ClasseMago extends Personagem {
     }
 
     public String detalhesMago() {
-        return detalhesPersonagem() + "\n\nDados sobre a Classe Mago \nSpellSlot: " + spellSlot + "\nCaracterísticas de Nível: " + caracteristicaNivel;
+        return detalhesPersonagem() + "\n\nDessa vez, vamos seguir com os dados específicos da sua classe de Mago: \n> Você tem " + spellSlot + "SpellSlots" + "\n> Suas características de personagem de acordo com o nível atual são as seguintes:\n" + caracteristicaNivel + "\n> Seus pontos de vida atuais (PV) são: " + pontosVida;
     }
-
 }
