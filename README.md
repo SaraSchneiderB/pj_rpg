@@ -14,4 +14,17 @@
 * As peças de ouro (POs) serão estipuladas de modo aleatório, considerando média indicada pelo criador, tendo em mente as informações do livro de D&D 5e.
 
 ## Iniciando a criação da ficha
-#### 
+#### Ao iniciar, você verá a lista de opções de classes e em seguida deve digitar sua escolha.
+#### Após preencher a opção, o programa irá lhe perguntar o nome do personagem, digite para continuar.
+#### Em seguida, você será perguntado qual nível de personagem desejará ter.
+#### Após essas informações, o programa irá lhe repassar o resumo de suas escolhas juntamente com as especificidades da classe e nível do personagem que você escolheu, como PVs (pontos de vida), spellslots, características do personagem e POs (peças de ouro). Dessa forma o procedimento estará completo!
+
+## Estrutura do Projeto
+#### O projeto constiste nas seguintes classes:
+``` MeuPersonagem_RPG ```  
+
+---
+``` Personagem ```
+
+---
+
