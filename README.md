@@ -24,7 +24,25 @@
 ``` MeuPersonagem_RPG ```  
 
 ---
-``` Personagem ```
+```Personagem```: 
+
+---
+```ClasseMago```: 
+
+---
+```ClasseFeiticeiro```: 
+
+---
+```ClasseGuerreiro```
+
+---
+```ClasseBarbaro```
+
+---
+```ClasseClerigo```
+
+---
+```ClassePaladino```
 
 ---
 
