@@ -21,7 +21,8 @@
 
 ## Estrutura do Projeto
 #### O projeto constiste nas seguintes classes:
-``` MeuPersonagem_RPG ```  
+
+``` MeuPersonagem_RPG ```: Classe principal, onde o projeto será iniciado/executado. 
 
 ---
 ```Personagem```: 
@@ -33,16 +34,16 @@
 ```ClasseFeiticeiro```: 
 
 ---
-```ClasseGuerreiro```
+```ClasseGuerreiro```: 
 
 ---
-```ClasseBarbaro```
+```ClasseBarbaro```: 
 
 ---
-```ClasseClerigo```
+```ClasseClerigo```: 
 
 ---
-```ClassePaladino```
+```ClassePaladino```: 
 
 ---
 
