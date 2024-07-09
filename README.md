@@ -25,10 +25,10 @@
 ``` MeuPersonagem_RPG ```: Classe principal, onde o projeto será iniciado/executado. 
 
 ---
-```Personagem```: 
+```Personagem```: Classe abstrata, que armazena atributos e métodos em comum com as classes herança. Sendo esses o nome, o nível, a característica de nível/personagem, a classe de armadura, os pontos de vida e o spellslot como atributos e peças de ouro como método.
 
 ---
-```ClasseMago```: 
+```ClasseMago```: Classe herança
 
 ---
 ```ClasseFeiticeiro```: 
