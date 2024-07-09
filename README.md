@@ -28,22 +28,22 @@
 ```Personagem```: Classe abstrata, que armazena atributos e métodos em comum com as classes herança. Sendo esses o nome, o nível, a característica de nível/personagem, a classe de armadura, os pontos de vida e o spellslot como atributos e peças de ouro como método.
 
 ---
-```ClasseMago```: Classe herança
+```ClasseMago```: Classe herança/subclasse de personagem, relacionado ao spellcaster, onde pode-se encontrar os comandos relacionados ao processo de castar magias, inventário, pontos de vida, spellslots e características de acordo com o nível escolhido.
 
 ---
-```ClasseFeiticeiro```: 
+```ClasseFeiticeiro```: Classe herança/subclasse de personagem, relacionado ao spellcaster, onde pode-se encontrar os comandos relacionados ao processo de castar magias, inventário, pontos de vida, spellslots e características de acordo com o nível escolhido.
 
 ---
-```ClasseGuerreiro```: 
+```ClasseGuerreiro```: Classe herança/subclasse de personagem, relacionado ao tank, onde pode-se encontrador os comandos relacionados a ataque, a inventário, a pontos de vida e as características de personagem considerando o nível selecionado.
 
 ---
-```ClasseBarbaro```: 
+```ClasseBarbaro```: Classe herança/subclasse de personagem, relacionado ao tank, onde pode-se encontrador os comandos relacionados a fúria, a resistência, a inventário, a pontos de vida e as características de personagem considerando o nível selecionado.
 
 ---
-```ClasseClerigo```: 
+```ClasseClerigo```: Classe herança/subclasse de personagem, relacionado ao healer, onde pode-se encontrador os comandos relacionados a conjuração de magia, a inventário, a pontos de vida e as características de personagem considerando o nível selecionado.
 
 ---
-```ClassePaladino```: 
+```ClassePaladino```: Classe herança/subclasse de personagem, relacionado ao suporte, onde pode-se encontrador os comandos relacionados a mãos consagradas, a inventário, a pontos de vida e as características de personagem considerando o nível selecionado.
 
 ---
 
