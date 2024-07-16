@@ -6,7 +6,6 @@ import java.util.Random;
  *
  * @author Sara
  */
-
 public class ClassePaladino extends Personagem {
 
     public void maosConsagradas() {
@@ -25,8 +24,9 @@ public class ClassePaladino extends Personagem {
 
     /**
      *
-     * @param nivelp puxa o valor atribuído no nível do personagem (int) - e o converte (string) quando necessário - para que possa ser utilizado nos comandos de pontos de vida, spellslots e
-     * características de nível
+     * @param nivelp puxa o valor atribuído no nível do personagem (int) - e o
+     * converte (string) quando necessário - para que possa ser utilizado nos
+     * comandos de pontos de vida, spellslots e características de nível
      */
     @Override
     public void setNivel(int nivelp) {
@@ -38,7 +38,8 @@ public class ClassePaladino extends Personagem {
 
     /**
      *
-     * @param nivels recebe a informação do nível do personagem e a partir dele estipula os pontos de vida
+     * @param nivels recebe a informação do nível do personagem e a partir dele
+     * estipula os pontos de vida
      */
     @Override
     public void setPontosVida(int nivels) {
@@ -61,7 +62,8 @@ public class ClassePaladino extends Personagem {
 
     /**
      *
-     * @param spellp recebe a informação do nível do personagem e a partir dele estipula os espaços de magia
+     * @param spellp recebe a informação do nível do personagem e a partir dele
+     * estipula os espaços de magia
      */
     @Override
     public void setSpellSlot(String spellp) {
@@ -84,7 +86,8 @@ public class ClassePaladino extends Personagem {
 
     /**
      *
-     * @param carNivelp puxa o nível do personagem para identificar quais são suas características de classe por nível
+     * @param carNivelp puxa o nível do personagem para identificar quais são
+     * suas características de classe por nível
      */
     @Override
     public void setCaracteristicaNivel(String carNivelp) {
@@ -107,6 +110,6 @@ public class ClassePaladino extends Personagem {
     }
 
     public String detalhesPaladino() {
-        return detalhesPersonagem() + "\n\nDessa vez, vamos seguir com os dados específicos da sua classe de Paladino: \n> Você tem " + spellSlot + "SpellSlots" + "\n> Suas características de personagem de acordo com o nível atual são as seguintes:\n" + caracteristicaNivel + "\n> Seus pontos de vida atuais (PV) são: " + pontosVida;
+        return detalhesPersonagem() + "\n\nDessa vez, vamos seguir com os dados específicos da sua classe de Paladino: \n> Você tem " + spellSlot + "SpellSlots" + "\n\n> Suas características de personagem de acordo com o nível atual são as seguintes:" + caracteristicaNivel + "\n\n> Você tem " + pontosVida + " pontos de vida atuais (PV)";
     }
 }

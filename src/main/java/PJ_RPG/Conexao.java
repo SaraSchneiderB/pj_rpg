@@ -39,9 +39,9 @@ public class Conexao {
                 }*/
         //}
     }
-    
-    public static int conectar(){
-        while (true) {            
+
+    public static int conectar() {
+        while (true) {
             try {
                 conex = DriverManager.getConnection(url, user, password);
                 return 0;
@@ -53,13 +53,13 @@ public class Conexao {
                 System.out.print("Opção: ");
                 Scanner s = new Scanner(System.in);
                 if (s.nextInt() == 2) {
-                return -1;
+                    return -1;
                 }
             }
         }
     }
 
     public static void main(String[] args) {
-         System.out.println(new Conexao().conectar());
+        System.out.println(new Conexao().conectar());
     }
 }

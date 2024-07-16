@@ -6,7 +6,6 @@ import java.util.Random;
  *
  * @author Sara
  */
-
 public class ClasseClerigo extends Personagem {
 
     public void conjurarSpell() {
@@ -25,8 +24,9 @@ public class ClasseClerigo extends Personagem {
 
     /**
      *
-     * @param nivelc puxa o valor atribuído no nível do personagem (int) - e o converte (string) quando necessário - para que possa ser utilizado nos comandos de pontos de vida, spellslots e
-     * características de nível
+     * @param nivelc puxa o valor atribuído no nível do personagem (int) - e o
+     * converte (string) quando necessário - para que possa ser utilizado nos
+     * comandos de pontos de vida, spellslots e características de nível
      */
     @Override
     public void setNivel(int nivelc) {
@@ -38,7 +38,8 @@ public class ClasseClerigo extends Personagem {
 
     /**
      *
-     * @param nivels recebe a informação do nível do personagem e a partir dele estipula os pontos de vida
+     * @param nivels recebe a informação do nível do personagem e a partir dele
+     * estipula os pontos de vida
      */
     @Override
     public void setPontosVida(int nivels) {
@@ -60,7 +61,8 @@ public class ClasseClerigo extends Personagem {
     }
 
     /**
-     * recebe a informação do nível do personagem e a partir dele estipula os espaços de magia
+     * recebe a informação do nível do personagem e a partir dele estipula os
+     * espaços de magia
      *
      * @param spell
      */
@@ -86,7 +88,8 @@ public class ClasseClerigo extends Personagem {
 
     /**
      *
-     * @param carNivelc puxa o nível do personagem para identificar quais são suas características de classe por nível
+     * @param carNivelc puxa o nível do personagem para identificar quais são
+     * suas características de classe por nível
      */
     @Override
     public void setCaracteristicaNivel(String carNivelc) {
@@ -109,6 +112,6 @@ public class ClasseClerigo extends Personagem {
     }
 
     public String detalhesClerigo() {
-        return detalhesPersonagem() + "\n\nDessa vez, vamos seguir com os dados específicos da sua classe de Clérigo: \n> Você tem " + spellSlot + "SpellSlots" + "\n> Suas características de personagem de acordo com o nível atual são as seguintes:\n" + caracteristicaNivel + "\n> Seus pontos de vida atuais (PV) são: " + pontosVida;
+        return detalhesPersonagem() + "\n\nDessa vez, vamos seguir com os dados específicos da sua classe de Clérigo: \n> Você tem " + spellSlot + "SpellSlots" + "\n\n> Suas características de personagem de acordo com o nível atual são as seguintes:" + caracteristicaNivel + "\n\n> Você tem " + pontosVida + " pontos de vida atuais (PV)";
     }
 }

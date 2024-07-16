@@ -6,7 +6,6 @@ import java.util.Random;
  *
  * @author Sara
  */
-
 public class ClasseBarbaro extends Personagem {
 
     private String resistencia = "Força e Constituição\n";
@@ -25,8 +24,9 @@ public class ClasseBarbaro extends Personagem {
 
     /**
      *
-     * @param nivelb puxa o valor atribuído no nível do personagem (int) - e o converte (string) quando necessário - para que possa ser utilizado nos comandos de pontos de vida, spellslots e
-     * características de nível
+     * @param nivelb puxa o valor atribuído no nível do personagem (int) - e o
+     * converte (string) quando necessário - para que possa ser utilizado nos
+     * comandos de pontos de vida, spellslots e características de nível
      */
     @Override
     public void setNivel(int nivelb) {
@@ -37,7 +37,8 @@ public class ClasseBarbaro extends Personagem {
 
     /**
      *
-     * @param nivels recebe a informação do nível do personagem e a partir dele estipula os pontos de vida
+     * @param nivels recebe a informação do nível do personagem e a partir dele
+     * estipula os pontos de vida
      */
     @Override
     public void setPontosVida(int nivels) {
@@ -60,7 +61,8 @@ public class ClasseBarbaro extends Personagem {
 
     /**
      *
-     * @param carNivelb puxa o nível do personagem para identificar quais são suas características de classe por nível
+     * @param carNivelb puxa o nível do personagem para identificar quais são
+     * suas características de classe por nível
      */
     @Override
     public void setCaracteristicaNivel(String carNivelb) {
@@ -85,12 +87,13 @@ public class ClasseBarbaro extends Personagem {
     public String getResistencia() {
         return resistencia;
     }
+
     /*
     public void setResistencia(String re) {
         this.resistencia = re;
     }
-    */
+     */
     public String detalhesBarbaro() {
-        return detalhesPersonagem() + "\n\nDessa vez, vamos seguir com os dados específicos da sua classe de Bárbaro:" + "\n>Sua resistência consiste em: " + resistencia + "\n> Suas características de personagem de acordo com o nível atual são as seguintes:\n" + caracteristicaNivel + "\n> Seus pontos de vida atuais (PV) são: " + pontosVida;
+        return detalhesPersonagem() + "\n\nDessa vez, vamos seguir com os dados específicos da sua classe de Bárbaro:" + "\n>Sua resistência consiste em: " + resistencia + "\n\n> Suas características de personagem de acordo com o nível atual são as seguintes:" + caracteristicaNivel + "\n\n> Você tem " + pontosVida + " pontos de vida atuais (PV)";
     }
 }

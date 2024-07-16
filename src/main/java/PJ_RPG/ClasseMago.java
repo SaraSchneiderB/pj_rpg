@@ -6,7 +6,6 @@ import java.util.Random;
  *
  * @author Sara
  */
-
 public class ClasseMago extends Personagem {
 
     public void castarMagia() {
@@ -15,7 +14,7 @@ public class ClasseMago extends Personagem {
 
     public void inventario() {
 
-        System.out.print("\n\nInventário:"
+        System.out.print("\nInventário:"
                 + "\nGrimório"
                 + "\nBolsa de componentes"
                 + "\nPacote de estudioso\n");
@@ -23,8 +22,9 @@ public class ClasseMago extends Personagem {
 
     /**
      *
-     * @param nivel2 puxa o valor atribuído no nível do personagem (int) - e o converte (string) quando necessário - para que possa ser utilizado nos comandos de pontos de vida, spellslots e
-     * características de nível
+     * @param nivel2 puxa o valor atribuído no nível do personagem (int) - e o
+     * converte (string) quando necessário - para que possa ser utilizado nos
+     * comandos de pontos de vida, spellslots e características de nível
      */
     @Override
     public void setNivel(int nivel2) {
@@ -36,7 +36,8 @@ public class ClasseMago extends Personagem {
 
     /**
      *
-     * @param nivels recebe a informação do nível do personagem e a partir dele estipula os pontos de vida
+     * @param nivels recebe a informação do nível do personagem e a partir dele
+     * estipula os pontos de vida
      */
     @Override
     public void setPontosVida(int nivels) {
@@ -59,7 +60,8 @@ public class ClasseMago extends Personagem {
 
     /**
      *
-     * @param spellm recebe a informação do nível do personagem e a partir dele estipula os espaços de magia
+     * @param spellm recebe a informação do nível do personagem e a partir dele
+     * estipula os espaços de magia
      */
     @Override
     public void setSpellSlot(String spellm) {
@@ -83,7 +85,8 @@ public class ClasseMago extends Personagem {
 
     /**
      *
-     * @param carNivel puxa o nível do personagem para identificar quais são suas características de classe por nível
+     * @param carNivel puxa o nível do personagem para identificar quais são
+     * suas características de classe por nível
      */
     @Override
     public void setCaracteristicaNivel(String carNivel) {
@@ -108,6 +111,6 @@ public class ClasseMago extends Personagem {
     }
 
     public String detalhesMago() {
-        return detalhesPersonagem() + "\n\nDessa vez, vamos seguir com os dados específicos da sua classe de Mago: \n> Você tem " + spellSlot + "SpellSlots" + "\n> Suas características de personagem de acordo com o nível atual são as seguintes:\n" + caracteristicaNivel + "\n> Seus pontos de vida atuais (PV) são: " + pontosVida;
+        return detalhesPersonagem() + "\n\nDessa vez, vamos seguir com os dados específicos da sua classe de Mago: \n> Você tem " + spellSlot + "SpellSlots" + "\n\n> Suas características de personagem de acordo com o nível atual são as seguintes:" + caracteristicaNivel + "\n\n> Você tem " + pontosVida + " pontos de vida atuais (PV)";
     }
 }

@@ -6,7 +6,6 @@ import java.util.Random;
  *
  * @author Sara
  */
-
 public class ClasseGuerreiro extends Personagem {
 
     public void ataque() {
@@ -14,7 +13,7 @@ public class ClasseGuerreiro extends Personagem {
     }
 
     public void inventario() {
-        System.out.print("\n\nInventário:"
+        System.out.print("\nInventário:"
                 + "\nCota de Malha"
                 + "\nClava grande"
                 + "\nPacote de explorador"
@@ -23,8 +22,9 @@ public class ClasseGuerreiro extends Personagem {
 
     /**
      *
-     * @param nivelg puxa o valor atribuído no nível do personagem (int) - e o converte (string) quando necessário - para que possa ser utilizado nos comandos de pontos de vida, spellslots e
-     * características de nível
+     * @param nivelg puxa o valor atribuído no nível do personagem (int) - e o
+     * converte (string) quando necessário - para que possa ser utilizado nos
+     * comandos de pontos de vida, spellslots e características de nível
      */
     @Override
     public void setNivel(int nivelg) {
@@ -35,7 +35,8 @@ public class ClasseGuerreiro extends Personagem {
 
     /**
      *
-     * @param nivels recebe a informação do nível do personagem e a partir dele estipula os pontos de vida
+     * @param nivels recebe a informação do nível do personagem e a partir dele
+     * estipula os pontos de vida
      */
     @Override
     public void setPontosVida(int nivels) {
@@ -58,7 +59,8 @@ public class ClasseGuerreiro extends Personagem {
 
     /**
      *
-     * @param carNivelg puxa o nível do personagem para identificar quais são suas características de classe por nível
+     * @param carNivelg puxa o nível do personagem para identificar quais são
+     * suas características de classe por nível
      */
     @Override
     public void setCaracteristicaNivel(String carNivelg) {
@@ -81,6 +83,6 @@ public class ClasseGuerreiro extends Personagem {
     }
 
     public String detalhesGuerreiro() {
-        return detalhesPersonagem() + "\n\nDessa vez, vamos seguir com os dados específicos da sua classe de Guerreiro: \n> Suas características de personagem de acordo com o nível atual são as seguintes:\n" + caracteristicaNivel + "\n> Seus pontos de vida atuais (PV) são: " + pontosVida;
+        return detalhesPersonagem() + "\n\nDessa vez, vamos seguir com os dados específicos da sua classe de Guerreiro: \n\n> Suas características de personagem de acordo com o nível atual são as seguintes:" + caracteristicaNivel + "\n\n> Você tem " + pontosVida + " pontos de vida atuais (PV)";
     }
 }
